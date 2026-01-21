@@ -1,46 +1,48 @@
-# My Shop (React E-Commerce)
+# Add to Cart Task - React Application
 
-A modern, responsive ReactJS e-commerce application that fetches real-time product data from the Fake Store API. It features a vibrant UI with gradient themes and a functional shopping cart.
+This is a ReactJS application that implements a product catalog and a shopping cart with proper routing and state management.
 
 ## Features
 
-- **Live Product Data:** Fetches products dynamically from [Fake Store API](https://fakestoreapi.com/).
-- **Modern UI:** Styled with Tailwind CSS using vibrant gradients (Fuchsia/Pink/Indigo themes).
-- **Shopping Cart:**
-  - Add items to cart (prevents duplicates).
-  - Remove items from the cart.
-  - View summary in a responsive modal.
-- **Dynamic Interactions:**
-  - Real-time cart count in the Navbar.
-  - Loading spinners during data fetch.
-  - Interactive hover effects on product cards.
-- **Responsive Design:** Fully optimized for mobile, tablet, and desktop screens.
+- **Product Listing**: Fetches and displays products from the Fake Store API.
+- **Responsive Design**: Built with Tailwind CSS for a seamless experience on all devices.
+- **Cart Management**:
+  - Add items to cart.
+  - Remove items from cart.
+  - Increase/Decrease item quantity.
+  - Dynamic price calculation.
+  - 10% Discount applied to the final total.
+- **Routing**: Client-side routing using React Router.
+- **State Management**: Context API for global cart state.
 
-## Technologies Used
+## Tech Stack
 
-- **ReactJS:** Core frontend library.
-- **Tailwind CSS:** For rapid, utility-first styling.
-- **Vite:** High-performance build tool and dev server.
-- **Fetch API:** For making asynchronous HTTP requests to the backend.
+- ReactJS
+- React Router DOM
+- Tailwind CSS
+- Fake Store API
 
-## Steps to Run Locally
+## Setup Instructions
 
-1. **Clone the repository:**
-   ```bash
-   git clone <repository_url>
-   cd "Add to Card"
-   ```
+1.  Clone the repository.
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Run the development server:
+    ```bash
+    npm run dev
+    ```
+4.  Open your browser at `http://localhost:5173`.
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+## Project Structure
 
-3. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
+- `src/components`: Reusable UI components (Navbar, ProductCard).
+- `src/pages`: Page components (Home, Cart).
+- `src/context`: Cart context for state management.
+- `src/App.jsx`: Main application component with routing setup.
 
-4. **Open in browser:**
-   Navigate to [http://localhost:5173](http://localhost:5173).
+## Functionality Details
 
+- **Home Page**: Shows a grid of products. Users can add a product to the cart. If a product is already in the cart, the button changes to "Remove".
+- **Cart Page**: displays selected items with their image, title, price, and quantity. Users can adjust quantity or remove items. The summary shows the subtotal, a 10% discount, and the final amount.

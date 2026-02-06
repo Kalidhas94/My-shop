@@ -7,9 +7,9 @@ const Navbar = () => {
     const cartCount = cart.length;
 
     return (
-        <nav className="bg-white/80 backdrop-blur-md text-gray-800 p-4 shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <nav className="bg-white/80 backdrop-blur-md text-gray-800 p-4 shadow-sm sticky top-0 z-50 bg-gradient-to-r from-indigo-400 to-pink-500">
             <div className="container mx-auto flex justify-between items-center">
-                <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+                <Link to="/" className="text-2xl font-bold bg-white bg-clip-text text-transparent hover:opacity-80 transition-opacity">
                     My Shop
                 </Link>
                 <Link
@@ -22,7 +22,7 @@ const Navbar = () => {
                     </svg>
 
                     {cartCount > 0 && (
-                        <span className="absolute -top-1 -right-1 bg-pink-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition-transform">
+                        <span className="absolute -top-0 mx-13 bg-pink-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition-transform">
                             {cartCount}
                         </span>
                     )}

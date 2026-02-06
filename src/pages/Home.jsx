@@ -27,9 +27,9 @@ const Home = () => {
     }
 
     return (
-        <div className="bg-gray-50 min-h-screen py-8">
+        <div className=" min-h-screen py-8">
             <div className="container mx-auto px-4">
-                <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">Featured Products</h1>
+                <h1 className="text-3xl font-bold text-white mb-8 text-center">Featured Products</h1>
                 <ProductList products={products} />
             </div>
         </div>

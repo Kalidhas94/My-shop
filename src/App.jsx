@@ -7,9 +7,10 @@ import { CartProvider } from './context/CartContext';
 
 function App() {
   return (
-    <CartProvider>
+
+<CartProvider>
       <Router>
-        <div className="bg-gray-50 min-h-screen font-sans antialiased text-gray-900">
+        <div className="bg-gradient-to-r from-indigo-400 to-pink-500 min-h-screen font-sans antialiased text-gray-900">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />

@@ -40,7 +40,7 @@ const ProductCard = ({ product }) => {
                             : 'bg-indigo-600 hover:bg-indigo-700 text-white ring-2 ring-indigo-300'
                         }`}
                 >
-                    {isInCart ? 'Remove' : 'Add to Cart'}
+                    {isInCart ? 'Remove from Cart' : 'Add to Cart'}
                 </button>
             </div>
         </div>
